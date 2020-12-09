@@ -1,0 +1,5 @@
+Gustavo,10,10,10
+Lusca,10,10,10
+Não gustavo,10,10,10
+Não lusca,10,10,10
+
