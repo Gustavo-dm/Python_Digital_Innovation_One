@@ -14,3 +14,11 @@ if 'erro' not in adress_data:
   print('Uf: {}'.format(adress_data['uf']))
 else:
   print('O Cep {} não foi encontrado, tente novamente'.format(cep_input))
+
+def retorna_pokemon(pokemon):
+  response = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon}')
+  dados_pokemon=response.json()
+  return dados_pokemon
+
+dados_pokemon=retorna_pokemon('pikachu')
+print(dados_pokemon['sprites']['front_shiny'])
