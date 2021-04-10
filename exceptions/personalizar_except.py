@@ -1,7 +1,7 @@
-class Error(Exception): #herda do built in exception
+class Error(Exception): 
   pass
 
-class InputError(Error): #herda de erro
+class InputError(Error): 
   def __init__ (self,message):
     self.message= message
 
